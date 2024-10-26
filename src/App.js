@@ -40,7 +40,7 @@ function App() {
     try {
       // Send POST request to notify API endpoint
       const response = await axios.post(
-        "http://localhost:3030/api/notify",
+        "https://payment-voice-broadcasting-backend.vercel.app/api/notify",
         {
           userId,
           message: notificationMessage,
